@@ -1,5 +1,4 @@
 .header-block {
-    height: 105px;
     display: flex;
     margin: 94px 24px;
 }
@@ -26,7 +25,7 @@
     margin-right: 0;
 }
 
-.first-item {
+.current-item {
     list-style: none;
 }
 
@@ -40,34 +39,33 @@
 }
 
 .header-contacts {
-    position: relative;
-    top: 5px;
-    margin-left: 193px;
+    margin: 4px 0 0 193px;
     padding: 0px 2px 0px;
     width: 210px;
-    height: 98px;
 }
 
-.header-contacts-item {
+.contacts-item {
     font-style: normal;
     font-size: 18px;
     line-height: 24.3px;
 }
 
-.header-contacts-link {
+.contacts-link {
     text-underline-offset: 5px;
 }
 
 /* -----------------------------------------------------------COVER---------------------------------------------------------------------------- */
 
 .cover {
-    height: 757px;
+    min-height: 757px;
+    background-image: url(/images/cover.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .cover-title_wrapper {
     position: relative;
-    width: 1100px;
-    height: 757px;
+    height: 100%;
 }
 
 .cover-image {
@@ -81,27 +79,23 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 60%);
     z-index: 0;
 }
 
 .title-wrapper {
     position: absolute;
     inset: 165px 50px 237px 50px;
-    width: 1000px;
-    height: 355px;
 }
 
 .cover-title {
-    position: absolute;
     display: flex;
     flex-direction: column;
-    inset: 0;
+    text-transform: uppercase;
     font-weight: 700;
     color: #fff;
     font-size: 100px;
     line-height: 115px;
-    z-index: 1;
     letter-spacing: 30px;
 }
 
@@ -115,27 +109,23 @@
 
 .aligned-text_center {
     text-align: center;
-    position: relative;
-    top: 12px;
-    right: 14px;
+    padding: 12px 29px 0 0;
 }
 
 .aligned-text_right {
     text-align: right;
-    position: relative;
-    top: 17px;
-    left: 30px;
+    margin: 4px 0 0 584px;
 }
 
 .cover__description {
-    position: relative;
-    bottom: 90px;
     display: flex;
-
+    padding-top: 667px;
 }
 
 .cover__description-text {
+    position: relative;
     margin: 0 79px;
+    text-transform: uppercase;
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
@@ -145,10 +135,12 @@
 }
 
 .bet-button {
+    font-family: Raleway, sans-serif;
     position: relative;
     bottom: 12px;
     width: 256px;
     height: 51px;
+    text-transform: uppercase;
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
@@ -161,7 +153,7 @@
 
 .lots {
     margin-top: 180px;
-    height: 692px;
+    min-height: 692px;
 }
 
 .lots__heading {
@@ -179,7 +171,7 @@
 }
 
 
-.lots__card-list-item {
+.li-reset {
     list-style: none;
 }
 
@@ -187,31 +179,29 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 334px;
-    height: 563px;
+    min-height: 563px;
     color: #fff;
+    background-position: center;
+    background-size: cover;
 }
 
 .card-link {
     display: block;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .card_type_film {
     background-image: url("/images/card-lot-01.jpg");
-    background-position: -120px 0px;
-    background-size: cover;
 }
 
 .card_type_book {
     background-image: url("/images/card-lot-02.jpg");
-    background-position: -100px 20px;
-    background-size: cover;
 }
 
 .card_type_picture {
     background-image: url("/images/card-lot-03.jpg");
-    background-size: cover;
 }
 
 .card-title {
@@ -235,15 +225,15 @@
 }
 
 .card__text-film {
-    padding: 238px 40px 48px;
+    /* padding: 238px 40px 48px; */
 }
 
 .card__text-book {
-    padding: 0 40px;
+    /* padding: 0 40px; */
 }
 
 .card__text-picture {
-    padding: 90px 40px 48px;
+    /* padding: 90px 40px 48px; */
 }
 
 .lots__look-more-link {
@@ -260,7 +250,7 @@
 
 .about {
     margin: 180px 0 0 71px;
-    height: 595px;
+    min-height: 595px;
 }
 
 .about__column {
@@ -286,7 +276,6 @@
     position: relative;
     top: 100px;
     width: 693px;
-    height: 449px;
 }
 
 .about__title {
@@ -313,7 +302,6 @@
 /* ----------------------------------------FOOTER---------------------------------- */
 
 .footer {
-    /* margin: 180px 50px 88px; */
     margin: 146px 50px 0px;
 }
 
@@ -325,7 +313,6 @@
 .footer-contacts {
     text-align: left;
     width: 210px;
-    height: 98px;
 }
 
 .footer-contacts-item {
@@ -363,7 +350,6 @@
     display: flex;
     justify-content: space-between;
     width: 240px;
-    height: 48px;
 }
 
 .footer__social-list-item {

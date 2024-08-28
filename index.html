@@ -14,7 +14,7 @@
       <div class="header-block">
         <nav class="header-nav">
           <ul class="nav-list">
-            <li class="nav-list-item first-item">
+            <li class="nav-list-item current-item">
               <a class="none-underline" href="#">главная</a>
             </li>
             <li class="nav-list-item">
@@ -31,11 +31,11 @@
           </a>
         </div>
         <div class="header-contacts">
-          <address class="header-contacts-item">
-            <a class="header-contacts-link" href="tel:+99995555555">+9 999 555 5555</a>
-            <a class="header-contacts-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <address class="contacts-item">
+            <a class="contacts-link" href="tel:+99995555555">+9 999 555 5555</a>
+            <a class="contacts-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
             <br>
-            <a class="header-contacts-link none-underline" href="#">наб. Принсенграхт 263- 265, Амстердам</a>
+            <a class="contacts-link none-underline" href="#">наб. Принсенграхт 263- 265, Амстердам</a>
           </address>
         </div>
       </div>
@@ -44,38 +44,37 @@
       <section class="cover">
         <div class="cover-title_wrapper">
           <div class="overlay"></div>
-          <img class="cover-image" src="images/cover.jpg" alt="cover">
           <div class="title-wrapper">
             <h1 class="cover-title">
               <span class="aligned-text"
-                >О<span class="letter-spacing-extended">Н</span>О</span
+                >о<span class="letter-spacing-extended">н</span>о</span
               >
               <span class="aligned-text_center"
-                >ТЕ<span class="letter-spacing-extended">Б</span>Е</span
+                >те<span class="letter-spacing-extended">б</span>е</span
               >
               <span class="aligned-text_right"
-                ><span class="letter-spacing-extended">Н</span>АДО</span
+                ><span class="letter-spacing-extended">н</span>адо</span
               >
             </h1>
           </div>
-        </div>
-        <div class="cover__description">
-          <p class="cover__description-text">
-            АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ
-          </p>
-          <button class="bet-button">СДЕЛАТЬ СТАВКУ</button>
+          <div class="cover__description">
+            <p class="cover__description-text">
+              Аукцион вещей, в которые никто не верил
+            </p>
+            <button class="bet-button" type="button">Сделать ставку</button>
+          </div>
         </div>
       </section>
       <section class="lots">
         <h2 class="lots__heading">ЛОТЫ</h2>
         <ul class="lots__card-list">
-          <li class="lots__card-list-item">
+          <li class="li-reset">
             <a class="card-link" href="#">
               <article class="card card_type_film">
                 <div class="overlay"></div>
-                <h2 class="card-title">
+                <h3 class="card-title">
                   ФИЛЬМ РЕЖИССЁРА, КОТОРЫЙ БРОСИЛ КИНОШКОЛУ
-                </h2>
+                </h3>
                 <p class="card__text card__text-film">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
@@ -84,7 +83,7 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item">
+          <li class="li-reset">
             <a class="card-link" href="#">
               <article class="card card_type_book">
                 <div class="overlay"></div>
@@ -102,7 +101,7 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item">
+          <li class="li-reset">
             <a class="card-link" href="#">
               <article class="card card_type_picture">
                 <div class="overlay"></div>
@@ -151,14 +150,14 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer-contacts">
-          <address class="footer-contacts-item">
-            <a class="header-contacts-link" href="tel:+99995555555">+9 999 555 5555</a>
-            <a class="header-contacts-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <address class="contacts-item">
+            <a class="contacts-link" href="tel:+99995555555">+9 999 555 5555</a>
+            <a class="contacts-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
             <br>
-            <a class="header-contacts-link none-underline" href="#">наб. Принсенграхт 263- 265, Амстердам</a>
+            <a class="contacts-link none-underline" href="#">наб. Принсенграхт 263- 265, Амстердам</a>
           </address>
         </div>
-        <div class="footer__menu">
+        <nav class="footer__menu">
           <ul class="footer__menu-list">
             <li class="footer__menu-list-item">
               <a class="footer__menu-link footer__menu-link_active" href="#">главная</a>
@@ -170,12 +169,18 @@
               <a class="footer__menu-link" href="#">об аукционе</a>
             </li>
           </ul>
-        </div>
-        <div class="footer__social-list">
-          <a href="#"><img class="footer__social-list-item" src="images/yt.svg" alt="yt"></a>
-          <a href="#"><img class="footer__social-list-item" src="images/vk.svg" alt="vk"></a>
-          <a href="#"><img class="footer__social-list-item" src="images/pinterest.svg" alt="pinterest"></a>
-        </div>
+        </nav>
+        <ul class="footer__social-list">
+          <li class="li-reset">
+            <a href="#"><img class="footer__social-list-item" src="images/yt.svg" alt="yt"></a>
+          </li>
+          <li class="li-reset">
+            <a href="#"><img class="footer__social-list-item" src="images/vk.svg" alt="vk"></a>
+          </li>
+          <li class="li-reset">
+            <a href="#"><img class="footer__social-list-item" src="images/pinterest.svg" alt="pinterest"></a>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>
