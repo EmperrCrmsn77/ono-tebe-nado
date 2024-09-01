@@ -57,6 +57,7 @@
 /* -----------------------------------------------------------COVER---------------------------------------------------------------------------- */
 
 .cover {
+    position: relative;
     min-height: 757px;
     background-image: url(../images/cover.jpg);
     background-position: center;
@@ -91,6 +92,8 @@
 .cover-title {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    min-height: 363px;
     text-transform: uppercase;
     font-weight: 700;
     color: #fff;
@@ -99,27 +102,37 @@
     letter-spacing: 30px;
 }
 
+.aligned-text {
+    min-height: 128px;
+    text-align: left;
+    letter-spacing: 30px;
+}
+
 .letter-spacing-extended {
     letter-spacing: 60px;
 }
 
-.aligned-text {
-    text-align: left;
-}
 
 .aligned-text_center {
     text-align: center;
-    padding: 12px 29px 0 0;
+    letter-spacing: 30px;
 }
 
 .aligned-text_right {
     text-align: right;
-    margin: 4px 0 0 584px;
+}
+
+.reset__letter-spacing {
+    letter-spacing: 0;
 }
 
 .cover__description {
     display: flex;
-    padding-top: 667px;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    padding-bottom: 39px;
+
 }
 
 .cover__description-text {
@@ -177,6 +190,7 @@
 
 .card {
     position: relative;
+    padding: 51px 40px 47px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -205,9 +219,6 @@
 }
 
 .card-title {
-    display: inline-block;
-    margin: 51px 40px 0;
-    text-align: left;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
@@ -222,18 +233,7 @@
     line-height: 24px;
     z-index: 1;
     text-decoration: none;
-}
-
-.card__text-film {
-    /* padding: 238px 40px 48px; */
-}
-
-.card__text-book {
-    /* padding: 0 40px; */
-}
-
-.card__text-picture {
-    /* padding: 90px 40px 48px; */
+    margin: 0px 0px 0px 0px;
 }
 
 .lots__look-more-link {
@@ -250,7 +250,6 @@
 
 .about {
     margin: 180px 0 0 71px;
-    min-height: 595px;
 }
 
 .about__column {
@@ -272,9 +271,7 @@
 }
 
 .about__wrapper {
-    margin-left: 72px;
-    position: relative;
-    top: 100px;
+    margin: 100px 0 0 72px;
     width: 693px;
 }
 
@@ -302,7 +299,7 @@
 /* ----------------------------------------FOOTER---------------------------------- */
 
 .footer {
-    margin: 146px 50px 0px;
+    margin: 181px 50px 0px;
 }
 
 .footer__wrapper {
