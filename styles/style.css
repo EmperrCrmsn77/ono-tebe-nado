@@ -127,8 +127,12 @@
 }
 
 .cover__description {
+    padding-inline: 50px;
     display: flex;
-    padding: 140px 0 0 78px;
+    gap: 79px;
+    justify-content: end;
+    align-items: center;
+    margin-top: 128px
 }
 
 .cover__description-text {
@@ -137,21 +141,15 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
-    margin-right: 79px;
     color: #fff;
     word-spacing: 18.5px;
 }
 
 .bet-button {
     font-family: Raleway, sans-serif;
-    position: relative;
-    bottom: 12px;
-    width: 256px;
-    height: 51px;
+    padding: 12px 32px;
     text-transform: uppercase;
-    font-weight: 500;
     font-size: 22px;
-    line-height: 26px;
     background-color: transparent;
     color: #fff;
     border: solid 1px #fff;
